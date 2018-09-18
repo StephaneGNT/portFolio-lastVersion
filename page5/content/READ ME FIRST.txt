@@ -1,0 +1,20 @@
+
+> Ouvrir  le HTML à votre nom (contentPrenom.html)
+
+> Editer la mini-bio (rester concis)
+
+> Pour chaque compétence :
+	- Modifier l'intitulé de la compétence si nécessaire ;
+	- Modifier le niveau de compétence en changeant la couleur de bullet :
+		* les bullet pleines s'appellent fullBullet.png
+		* les bullet vides s'appellent whiteBullet.svg
+
+	/!\  Toujours avoir 5 bullets au total
+	     Les fichiers bullet n'ont pas la même extension
+	     La première bullet a un id (firstBullet) que les autres n'ont pas
+	
+	Remarque : Il est possible de supprimer des compétences ; en ajouter est + compliqué.
+
+> Enregistrer
+
+> Re uploader sur le drive (et supprimer l'ancien fichier)

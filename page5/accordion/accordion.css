@@ -1,0 +1,56 @@
+@font-face{
+    font-family: TitleFont;
+    src: url("../font/titleFont.ttf") format("truetype");
+}
+p{
+    font-family: TitleFont;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    font-size: 1.4rem;
+    color: white;
+}
+.card-header{
+    padding: 0;
+    background-color: #F5F2C2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.card-header img{
+    border-radius: 50%;
+    margin: 0;
+    padding:0;
+}
+.card-header span{
+    font-family: TitleFont;
+    letter-spacing: 0.05rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 5%;
+    color: #CAAA67;
+}
+.card-header span:active{
+    text-decoration: none;
+}
+.collapse{
+    height: auto;
+    background-image: url(../image/accordionBackground.jpg);
+    margin: 0;
+}
+.card-body{
+    height: 650px;
+    background-color: transparent;
+}
+.card-body object{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    background-color: transparent;
+}
+img{
+    width: 20%;
+}
+#gitHubLogo{
+    width: 16%;
+}

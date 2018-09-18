@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+
+
+body{
+    background-color: transparent;
+    color: white;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+img{
+    width: 20%;
+    margin-right: 5%;
+}
+.competences{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+.competences p{
+    margin: 5px 15px;        
+}
+.competences img{
+    width: 80%        
+}
+.accordionContainer{
+    padding: 0;
+}
+.bullet{
+    display: flex;
+    flex-direction: row;
+}
+.bullet img{
+    width: 25%;
+    height: 15%;
+    transform: rotate(45deg);
+    margin-left:-10%; 
+}
+#firstBullet{
+    margin-left:+10%;
+}
+
+

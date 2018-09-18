@@ -1,0 +1,35 @@
+
+@font-face{
+font-family: TitleFont;
+src: url("../font/titleFont.ttf") format("truetype");
+
+}
+.Affiche{
+	height: 100%;
+}
+
+.divAffiche{
+	height: 90%;
+	margin-top: 5%;
+}
+.Modale
+{
+	background-image: url(Fond.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+object{
+	width: 90%;
+	height: 80%;
+}
+#linkedInLogo{
+	width: 20%;
+	
+}
+#gitHubLogo{
+	width: 16%;
+	
+}
+.modal-body{
+	padding: 0;
+}

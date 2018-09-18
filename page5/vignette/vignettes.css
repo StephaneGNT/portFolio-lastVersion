@@ -1,0 +1,88 @@
+
+.wrapper {
+  max-width: 200px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: content;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#vignette-item1 {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/stepha10.jpg");
+  left: 40px;
+  top: 40px;
+}
+
+#vignette-item1:hover {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/stepha10.png");
+}
+
+#vignette-item2 {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/zack11.jpg");
+  left: 60px;
+  top: 40px;
+}
+
+#vignette-item2:hover {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/zack-c10.png");
+}
+
+#vignette-item3 {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/hugo10.jpg");
+  left: 80px;
+  top: 40px;
+}
+
+#vignette-item3:hover {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/hugo-c10.png");
+}
+
+#vignette-item4 {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/mathie10.jpg");
+  left: 100px;
+  top: 40px;
+}
+
+#vignette-item4:hover {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/mathie11.png");
+}
+
+#vignette-item5 {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/magali10.png");
+  left: 120px;
+  top: 40px;
+}
+
+#vignette-item5:hover {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/magali11.png");
+}
+
+#vignette-item6 {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/marion11.jpg");
+  left: 140px;
+  top: 40px;
+}
+
+#vignette-item6:hover {
+  background-image: url("https://i13.servimg.com/u/f13/11/46/95/22/marion10.png");
+}
+
+
+div.img-title {
+  position: absolute;
+  top: 110%;
+}
+
+h2.name1 {
+  font-size: 1.5rem;
+}
