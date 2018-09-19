@@ -16,146 +16,74 @@
   
 <body>
     <!--NAVBAR-->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">l
-              <a class="navbar-brand" href="#">Portfolio</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse container-fluid" id="navbarNavDropdown">
+    <div class="container-fluid" style="padding:0px;">
+    	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+     	  	 <a class="navbar-brand" href="#">Portfolio</a>
+     		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+     		 </button>
+     		 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+   			 <ul class="navbar-nav ml-auto mr-5">
+     				 <li class="nav-item dropdown">
+                    	<a class="nav-link dropdown-toggle" href="#" id="groupe1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	A-D
+                    	</a>
+                    	<div class="dropdown-menu" aria-labelledby="groupe1">
+                        	<a class="dropdown-item" href="page1.html">Groupe A-B</a>
+                        	<a class="dropdown-item" href="page2.html">Groupe B-C</a>
+                        	<a class="dropdown-item" href="page3.html">Groupe C-D</a>
+                    	</div>
+                	</li>
 
-                  <ul class="navbar-nav ml-auto">
-                      <li class="ml-auto">
-                          <span class="navbar-text ml-auto text-dark mr-3"> Listes d'élèves </span></li>
-                          <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="groupe1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  A-D
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="groupe1">
-                                  <a class="dropdown-item" href="page1.html">Groupe A-B</a>
-                                  <a class="dropdown-item" href="page2.html">Groupe B-C</a>
-                                  <a class="dropdown-item" href="page3.html">Groupe C-D</a>
-                              </div>
-                          </li>
+     				 <li class="nav-item dropdown">
+                    	<a class="nav-link dropdown-toggle" href="#" id="groupe2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	E-M
+                    	</a>
+                    	<div class="dropdown-menu" aria-labelledby="groupe2">
+                        	<a class="dropdown-item" href="page4.html">Groupe E-G</a>
+                        	<a class="dropdown-item" href="page5.html">Groupe G-K</a>
+                        	<a class="dropdown-item" href="page6.html">Groupe K-M</a>
+                    	</div>
+                	</li>
 
-                          <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="groupe2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  E-M
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="groupe2">
-                                  <a class="dropdown-item" href="page4.html">Groupe E-G</a>
-                                  <a class="dropdown-item" href="page5.html">Groupe G-K</a>
-                                  <a class="dropdown-item" href="page6.html">Groupe K-M</a>
-                              </div>
-                          </li>
+                	<li class="nav-item dropdown">
+                    	<a class="nav-link dropdown-toggle" href="#" id="groupe3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	M-Y
+                    	</a>
+                    	<div class="dropdown-menu" aria-labelledby="groupe3">
+                        	<a class="dropdown-item" href="page7.html">Groupe M-N</a>
+                        	<a class="dropdown-item" href="page8.html">Groupe P-R</a>
+                        	<a class="dropdown-item" href="page9.html">Groupe S-Y</a>
+                    	</div>
+                	</li>
+   			 </ul>
+     		 </div>
+   	 </nav>
+    </div>
 
-                          <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="groupe3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  M-Y
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="groupe3">
-                                  <a class="dropdown-item" href="page7.html">Groupe M-N</a>
-                                  <a class="dropdown-item" href="page8.html">Groupe P-R</a>
-                                  <a class="dropdown-item" href="page9.html">Groupe S-Y</a>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-        </nav>
-    </header>
-
+    <audio id="tir" preload="auto">
+        <source src="page5/sound/tir.mp3">
+    </audio>
     <main class="mainRow">
         
-        <!-- ECRAN D'ACCUEIL FORMAT ECRAN -->
-        <!--<div class="container d-none d-md-block">
-            <div class="row" id="row1">
-            <div class="col-2 offset-5 text-center">
-                <button type="button" class="rounded-circle border border light" id="vignette-item1"data-toggle="modal" data-target="#modalSteph">
-                </button>
-            </div>
-            </div>
-            <div class="row" id="row1bis">
-                <div class="col-2 offset-5 text-center">
-                <h2 class="name">Stéphane Guinot</h2>
-                </div>
-            </div>
-
-            <div class="row " id="row2">
-            <div class="col-2 offset-2 text-center">
-                <button type="button" class="rounded-circle border border light" id="vignette-item2" data-toggle="modal" data-target="#modalZak">
-                </button>
-            </div>
-            <div class="col-2 offset-4 text-center">
-                <button type="button" class="rounded-circle border border light" id="vignette-item3" data-toggle="modal" data-target="#modalHugo">
-                </button>
-            </div>
-            </div>
-            <div class="row" id="row2bis">
-                <div class="col-2 offset-2 text-center">
-                <div class="img-title">
-                    <h2 class="name">Zakaria Hamichi</h2>
-                </div>
-                </div>
-                <div class="col-2 offset-4 text-center">
-                <div class="img-title">
-                    <h2 class="name">Hugo Hontans</h2>
-                </div>
-                </div>
-            </div>
-
-            <div class="row" id="row3">
-            <div class="col-2 offset-2 text-center">
-                <button type="button" class="rounded-circle border border light" id="vignette-item4" data-toggle="modal" data-target="#modalMathieu">
-
-                </button>
-            </div>
-            <div class="col-2 offset-4 text-center">
-                <button type="button" class="rounded-circle border border light" id="vignette-item5"data-toggle="modal" data-target="#modalMagali">
-
-                </button>
-            </div>
-            </div>
-            <div class="row" id="row3bis">
-                <div class="col-2 offset-2 text-center">
-                    <div class="img-title">
-                        <h2 class="name">Mathieu Kanel</h2>
-                    </div>
-                </div>
-                <div class="col-2 offset-4 text-center">
-                    <div class="img-title">
-                        <h2 class="name">Magali<br>Klein</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="row4">
-            <div class="col-2 offset-5 text-center">
-                <button type="button" class="rounded-circle border border light" id="vignette-item6" data-toggle="modal" data-target="#modalMarion">
-                <div id="vignette6">
-                    <div class="wrapper">
-                    </div>
-                </div>
-                </button>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col-2 offset-5 text-center">
-                    <div class="img-title">
-                        <h2 class="name">Marion KooSinLin</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    -->
+        <!-- ECRAN D'ACCUEIL FORMAT ORDINATEUR -->
         <div class="container d-none d-md-block">
             <div class="row">
+                <div class="text-center" id="mainTitle">
+                    <span>WILD<br>DEV</span>
+                </div>
+                <div id="cloud1">
+                    <img src="page5/image/cloud1.png" alt="big cloud">
+                </div>
+                <div id="cloud2">
+                    <img src="page5/image/cloud2.png" alt="little cloud">
+                </div>
                 <div class="text-center vignette" id="vignette1">
                     <div class="text-center">
                         <button type="button" class="rounded-circle border border light" id="vignette-item1"data-toggle="modal" data-target="#modalMagali"></button>
                     </div>
                     <div>
-                        <h2 class="name" id="titreVignette1">Stéf<br>Klein</h2>
+                        <h2 class="name" id="titreVignette1"></h2>
                     </div>
                 </div>
                 <div class="text-center vignette" id="vignette2">
@@ -192,12 +120,15 @@
                 </div>
                 <div class="text-center vignette" id="vignette6">
                     <div class="text-center">
-                        <button type="button" class="rounded-circle border border light" id="vignette-item6"data-toggle="modal" data-target="#modalMagali"></button>
+                        <button type="button" class="rounded-circle border border light" id="vignette-item6"data-toggle="modal"></button>
                     </div>
                     <div>
-                        <h2 class="name" id="titreVignette6">Marion<br>Klein</h2>
+                        <h2 class="name" id="titreVignette6"></h2>
                     </div>
                 </div>
+            </div>
+            <div>
+                <p id="droit_image"><a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Freepik</a></p>
             </div>
         </div>
         <!-- FIN ECRAN D'ACCUEIL FORMAT ORDI -->
@@ -207,19 +138,19 @@
             <div class="card">
                 <div class="card-header">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <button class="btn btn-link collapsed text-left" id="button1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <img src="page5/image/stephane-chapeau.png" alt="Wilder1">
                             <span>Stéphane Guinot</span>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseOne" class="collapse collapseMobile" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <p class="wanted text-center">WANTED</p>
-                        <object data="page5/content/contentStephane.html"></object>
-                        <div class="text-center">
-                            <a href="https://www.linkedin.com/in/stephane-guinot-47a6aa97/"><img src="../image/linkedInLogo.png" alt="linkedIn link"></a>
-                            <a href="https://github.com/StephaneGNT"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                        <object id="object1" data="page5/content/contentStephane.html"></object>
+                        <div class="text-center" id="link1">
+                            <a id="linkedinLogo1" href="https://www.linkedin.com/in/stephane-guinot-47a6aa97/"><img src="page5/image/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo1" href="https://github.com/StephaneGNT"><img src="page5/image/gitHubLogo.png" alt="Logo link"></a>
                         </div>
                         <p class="reward text-center mt-3">$ 1 000</p>
                     </div>
@@ -229,19 +160,19 @@
             <div class="card">
                 <div class="card-header">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
-                            <img src="page5/image/zakaria-chapeau.png" alt="Wilder1">
+                        <button class="btn btn-link collapsed text-left" id="button2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="page5/image/zakaria-chapeau.png" alt="Wilder2">
                             <span>Zakaria Hamichi</span>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseTwo" class="collapse collapseMobile" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <p class="wanted text-center">WANTED</p>
-                        <object data="page5/content/contentZakaria.html"></object>
-                        <div class="text-center">
-                            <a href="https://www.linkedin.com/in/zakaria-hamichi-ab8893170/"><img src="../image/linkedInLogo.png" alt="linkedIn link"></a>
-                            <a href="https://github.com/ZakariaHamichi"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                        <object id="object2" data="page5/content/contentZakaria.html"></object>
+                        <div class="text-center" id="link2">
+                            <a id="linkedinLogo2" href="https://www.linkedin.com/in/zakaria-hamichi-ab8893170/"><img src="page5/image/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo2" href="https://github.com/ZakariaHamichi"><img src="page5/image/gitHubLogo.png" alt="Logo link"></a>
                         </div>
                         <p class="reward text-center mt-3">$ 1 000</p>
                     </div>
@@ -251,19 +182,19 @@
             <div class="card">
                 <div class="card-header">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                        <button class="btn btn-link collapsed text-left" id="button3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
                             <img src="page5/image/hugo-chapeau.png" alt="Wilder1">
                             <span>Hugo Hontans</span>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseThree" class="collapse collapseMobile" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <p class="wanted text-center">WANTED</p>
-                        <object data="page5/content/contentHugo.html"></object>
-                        <div class="text-center">
-                            <a href="https://www.linkedin.com/in/hugo-hontans-34b798170/"><img src="../image/linkedInLogo.png" alt="linkedIn link"></a>
-                            <a href="https://github.com/Hugo-Hontans"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                        <object id="object3" data="page5/content/contentHugo.html"></object>
+                        <div class="text-center" id="link3">
+                            <a id="linkedinLogo3" href="https://www.linkedin.com/in/hugo-hontans-34b798170/"><img src="page5/image/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo3" href="https://github.com/Hugo-Hontans"><img src="page5/image/gitHubLogo.png" alt="Logo link"></a>
                         </div>
                         <p class="reward text-center mt-3">$ 1 000</p>
                     </div>
@@ -273,19 +204,19 @@
             <div class="card">
                 <div class="card-header">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                        <button class="btn btn-link collapsed text-left" id="button4" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
                             <img src="page5/image/mathieu-chapeau.png" alt="Wilder1">
                             <span>Mathieu Kanel</span>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseFour" class="collapse collapseMobile" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <p class="wanted text-center">WANTED</p>
-                        <object data="page5/content/contentMathieu.html"></object>
-                        <div class="text-center">
-                            <a href="https://www.linkedin.com/in/mathieu-kanel-64233b160/"><img src="../image/linkedInLogo.png" alt="linkedIn link"></a>
-                            <a href="https://github.com/Nexter73"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                        <object id="object4" data="page5/content/contentMathieu.html"></object>
+                        <div class="text-center" id="link4">
+                            <a id="linkedinLogo4" href="https://www.linkedin.com/in/mathieu-kanel-64233b160/"><img src="page5/image/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo4" href="https://github.com/Nexter73"><img src="page5/image/gitHubLogo.png" alt="Logo link"></a>
                         </div>
                         <p class="reward text-center mt-3">$ 1 000</p>
                     </div>
@@ -295,19 +226,19 @@
             <div class="card">
                 <div class="card-header">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                        <button class="btn btn-link collapsed text-left" id="button5" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
                             <img src="page5/image/magali-chapeau.png" alt="Wilder1">
                             <span>Magali Klein</span>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseFive" class="collapse collapseMobile" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <p class="wanted text-center">WANTED</p>
-                        <object data="page5/content/contentMagali.html"></object>
-                        <div class="text-center">
-                            <a href="https://www.linkedin.com/in/klein-magali/?originalSubdomain=fr" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link"></a>
-                            <a href="https://github.com/Pelican07" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                        <object id="object5" data="page5/content/contentMagali.html"></object>
+                        <div class="text-center" id="link5">
+                            <a id="linkedinLogo5" href="https://www.linkedin.com/in/klein-magali/?originalSubdomain=fr" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo5" href="https://github.com/Pelican07" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link"></a>
                         </div>
                         <p class="reward text-center mt-3">$ 1 000</p>
                     </div>
@@ -317,19 +248,19 @@
             <div class="card">
                 <div class="card-header">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <button class="btn btn-link collapsed text-left" id="button6" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                             <img src="page5/image/marion-chapeau.png" alt="Wilder1">
                             <span>Marion Koosinlin</span>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseSix" class="collapse collapseMobile" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <p class="wanted text-center">WANTED</p>
-                        <object data="page5/content/contentMarion.html"></object>
-                        <div class="text-center">
-                            <a href="https://www.linkedin.com/in/marion-koo-sin-lin-150161114/" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link"></a>
-                            <a href="https://github.com/Yumenotsuki" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                        <object id="object6" data="page5/content/contentMarion.html"></object>
+                        <div class="text-center" id="link6">
+                            <a id="linkedinLogo6" href="https://www.linkedin.com/in/marion-koo-sin-lin-150161114/" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo6" href="https://github.com/Yumenotsuki" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link"></a>
                         </div>
                         <p class="reward text-center mt-3">$ 1 000</p>
                     </div>
@@ -353,10 +284,10 @@
                         <p style="opacity:0">$</p>
                         </div>
                         <div id="wanted2" class="col-6">
-                        <object data="page5/content/contentHugo.html"></object>
-                        <div class="liens text-center">
-                            <a href="https://www.linkedin.com/in/hugo-hontans-34b798170/" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
-                            <a href="https://github.com/Hugo-Hontans" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                        <object data="page5/content/contenthugo.html"></object>
+                        <div class="liens text-center" id="link7">
+                            <a href="https://www.linkedin.com/in/hugo-hontans-34b798170/" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
+                            <a href="https://github.com/Hugo-Hontans" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
                         </div>
                         </div>
                     </div>
@@ -379,10 +310,10 @@
                         <p style="opacity:0">$</p>
                         </div>
                         <div id="wanted2" class="col-6">
-                        <object data="page5/content/contentZakaria.html"></object>
+                        <object data="page5/content/contentzakaria.html"></object>
                         <div class="liens text-center">
-                            <a href="https://www.linkedin.com/in/zakaria-hamichi-ab8893170/" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
-                            <a href="https://github.com/ZakariaHamichi" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                            <a href="https://www.linkedin.com/in/zakaria-hamichi-ab8893170/" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
+                            <a href="https://github.com/ZakariaHamichi" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
                         </div>
                         </div>
                     </div>
@@ -405,10 +336,10 @@
                                     <p style="opacity:0">$</p>
                                 </div>
                                 <div id="wanted2" class="col-6">
-                                    <object data="page5/content/contentStephane.html"></object>
+                                    <object data="page5/content/contentstephane.html"></object>
                                     <div class="liens text-center">
-                                        <a href="https://www.linkedin.com/in/stephane-guinot-47a6aa97/" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
-                                        <a href="https://github.com/StephaneGNT" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                                        <a href="https://www.linkedin.com/in/stephane-guinot-47a6aa97/" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
+                                        <a href="https://github.com/StephaneGNT" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
                                     </div>
                                 </div>
                             </div>
@@ -431,10 +362,10 @@
                         <p style="opacity:0">$</p>
                         </div>
                         <div id="wanted2" class="col-6">
-                        <object data="page5/content/contentMathieu.html"></object>
+                        <object data="page5/content/contentmathieu.html"></object>
                         <div class="liens text-center">
-                            <a href="https://www.linkedin.com/in/mathieu-kanel-64233b160/" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
-                            <a href="https://github.com/Nexter73" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                            <a href="https://www.linkedin.com/in/mathieu-kanel-64233b160/" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
+                            <a href="https://github.com/Nexter73" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
                         </div>
                         </div>
                     </div>
@@ -457,10 +388,10 @@
                         <p style="opacity:0">$</p>
                         </div>
                         <div id="wanted2" class="col-6">
-                        <object data="page5/content/contentMagali.html"></object>
+                        <object data="page5/content/contentmagali.html"></object>
                         <div class="liens text-center">
-                            <a href="https://www.linkedin.com/in/klein-magali/?originalSubdomain=fr" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
-                            <a href="https://github.com/Pelican07" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                            <a href="https://www.linkedin.com/in/klein-magali/?originalSubdomain=fr" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
+                            <a href="https://github.com/Pelican07" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
                         </div>
                         </div>
                     </div>
@@ -483,10 +414,10 @@
                         <p style="opacity:0">$</p>
                         </div>
                         <div id="wanted2" class="col-6">
-                        <object data="page5/content/contentMarion.html"></object>
+                        <object data="page5/content/contentmarion.html"></object>
                         <div class="liens text-center">
-                            <a href="https://www.linkedin.com/in/marion-koo-sin-lin-150161114/" target="_blank"><img src="../image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
-                            <a href="https://github.com/Yumenotsuki" target="_blank"><img src="../image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
+                            <a href="https://www.linkedin.com/in/marion-koo-sin-lin-150161114/" target="_blank"><img src="page5/image/linkedInLogo.png" alt="linkedIn link" id="linkedInLogo"></a>
+                            <a href="https://github.com/Yumenotsuki" target="_blank"><img src="page5/image/gitHubLogo.png" alt="Logo link" id="gitHubLogo"></a>
                         </div>
                         </div>
                     </div>
@@ -497,15 +428,6 @@
         </div>
     </main>   
 
-    <!-------------------footer------------->
-    <footer class="container-fluid row">
-        <div>
-            <p class="footer_lyon"><img src="page5/image/logoWild_small.png" alt="photo Marion" class="logo_wild"> Lyon 2018 </p>
-        </div>
-        <div class="row d-none d-md-block" >
-            <p id="droit_image"><a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Freepik</a></p>
-        </div>
-    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
