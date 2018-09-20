@@ -6,10 +6,10 @@ $(document).ready(function() {
     let width=$(document).width();
     let height=$(document).height();
     let xcenter = width/2;
-    let ycenter = height/2*0.8;
+    let ycenter = height/2*0.77;
     
     // Détermination du rayon du cercle
-    let r=height/2*0.6;
+    let r=height/2*0.57;
     
     // Détermination de la largeur d'une vignette
     let vignetteWidth=document.getElementById('vignette1').clientWidth;
