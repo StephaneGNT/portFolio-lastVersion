@@ -2,9 +2,8 @@
     font-family: BouWeste;
     src: url("../font/BouWeste.ttf") format("truetype");
   }
-
 html{
-  overflow: hidden;
+    overflow: hidden;
 }
 body{
     background-color: transparent;

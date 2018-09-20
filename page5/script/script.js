@@ -3,13 +3,13 @@
 $(document).ready(function() {
 
     // Affichage du background sur 100% de la hauteur
-    $(".mainRow").css('height',0.9*$(window).height()+"px");
+    //$(".mainRow").css('height',0.925*$(window).height()+"px");
 
     // Détermination de la position du center
     let width=$(document).width();
     let height=$(document).height();
     let xcenter = width/2;
-    let ycenter = height/2*0.78;
+    let ycenter = height/2*0.8;
     // Détermination du rayon du cercle
     let r=height/2*0.6;
     // Détermination de la largeur d'une vignette
@@ -28,7 +28,7 @@ $(document).ready(function() {
     $("#cloud1").css('left',0.1*width);
     $("#cloud2").css('left',0.5*width);
 
-    // Si changement de taille de fenêtre
+    // Si changement de taille de fenêtre /////////////////////////////////////////////////////////////////////////////////////////
     $(window).resize(function() {
         width = $(document).width();
         height = $(document).height();
@@ -41,8 +41,8 @@ $(document).ready(function() {
         title.style.left=100*(xcenter-titleWidth/2)/width+"%";
     });
     
-// TEST MOUVEMENT ///////////////////////////////////////////////////////////////////////////////////////////
-
+    
+    // Mouvement des nuages ///////////////////////////////////////////////////////////////////////////////////////////////////////
     let sens1=2;
     let sens2=1;
     let cloud1=document.getElementById("cloud1");
@@ -73,10 +73,8 @@ $(document).ready(function() {
         xCloud1=parseFloat(getComputedStyle(cloud1).left);
         xCloud2=parseFloat(getComputedStyle(cloud2).left);
     }, 20);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
-    // FadeIn des vignettes
+    // FadeIn des vignettes ///////////////////////////////////////////////////////////////////////////////////////////////////////
     let delay=4000;
     $('#vignette-item1').animate({opacity: '1'}, delay, 'linear', function(){});
     $('#vignette-item2').animate({opacity: '1'}, delay, 'linear', function(){});
@@ -90,12 +88,12 @@ $(document).ready(function() {
     let max=2;
     for(let j=0;j<max;j++){
         for(let i=0;i<100;i++){
-            moveit('vignette1',2*Math.PI*i/100-Math.PI/2);
-            moveit('vignette2',2*Math.PI*i/100-Math.PI/6);
-            moveit('vignette3',2*Math.PI*i/100+Math.PI/6);
-            moveit('vignette4',2*Math.PI*i/100+Math.PI/2);
-            moveit('vignette5',2*Math.PI*i/100+5*Math.PI/6);
-            moveit('vignette6',2*Math.PI*i/100+7*Math.PI/6);
+            moveitcircular('vignette1',2*Math.PI*i/100-Math.PI/2);
+            moveitcircular('vignette2',2*Math.PI*i/100-Math.PI/6);
+            moveitcircular('vignette3',2*Math.PI*i/100+Math.PI/6);
+            moveitcircular('vignette4',2*Math.PI*i/100+Math.PI/2);
+            moveitcircular('vignette5',2*Math.PI*i/100+7*Math.PI/6);
+            moveitcircular('vignette6',2*Math.PI*i/100+5*Math.PI/6);
         };
     }
 
@@ -126,9 +124,6 @@ $(document).ready(function() {
         vignette6.style.left=drawing(7*Math.PI/6)[1];
     }
 
-   
-    //var audioElement = document.createElement('audio');
-    //audioElement.setAttribute('src', '../sound/tir.mp3');
     var audioElement = $("#tir")[0];
     for(let i=1;i<=6;i++){
         let vignetteId='#vignette-item'+i;
@@ -143,7 +138,25 @@ $(document).ready(function() {
         return [top, left];
     }
 
-
+    // Sepia filter on hover
+    function changeOnHover (i) {
+        let selectedVignette = $("#vignette-item" + i);
+        let vignetteArray = [1, 2 , 3, 4, 5 , 6];
+        let deleteArray = vignetteArray.splice(i - 1, 1);
+        selectedVignette.hover(function() {
+            for (let j = 0; j < 6; j++) {
+                $("#vignette-item" + vignetteArray[j]).css('filter','sepia\(100%\)');
+            }
+        },function() {
+            for (let j = 0; j < 6; j++) {
+                $("#vignette-item" + vignetteArray[j]).css('filter','none');
+            }
+        })
+    }
+    
+    for (let i = 1; i < 7; i++) {
+        changeOnHover(i);
+    }
     
     // Remplissage aléatoire des vignettes (photo, target et titre)
     //Données d'entrée
@@ -210,33 +223,13 @@ $(document).ready(function() {
     }
     
     // Déplacement circulaire
-    function moveit(id,t) {
-        let newLeft = Math.floor(xcenter - vignetteWidth/2 + (r * Math.cos(t)));
-        let newTop = Math.floor(ycenter + (r * Math.sin(t)));
+    function moveitcircular(id,t) {
+        let newLeft = (xcenter - vignetteWidth/2 + (r * 1.05 * Math.cos(t)));
+        let newTop = (ycenter + (r*1.05 * Math.sin(t)));
         
         $("#"+id).animate({
             top: newTop,
             left: newLeft,
         }, 1)
-    }
-
-    // Sepia filter on hover
-    function changeOnHover (i) {
-        let selectedVignette = $("#vignette-item" + i);
-        let vignetteArray = [1, 2 , 3, 4, 5 , 6];
-        let deleteArray = vignetteArray.splice(i - 1, 1);
-        selectedVignette.hover(function() {
-            for (let j = 0; j < 6; j++) {
-                $("#vignette-item" + vignetteArray[j]).css('filter','sepia\(100%\)');
-            }
-        },function() {
-            for (let j = 0; j < 6; j++) {
-                $("#vignette-item" + vignetteArray[j]).css('filter','none');
-            }
-        })
-    }
-    
-    for (let i = 1; i < 7; i++) {
-        changeOnHover(i);
     }
 });
