@@ -91,6 +91,7 @@ button:hover {
   background-size:cover;
   opacity: 0;
   transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
 }
 #vignette-item1:hover {
   background-size:cover;
@@ -101,6 +102,7 @@ button:hover {
   background-size:cover;
   opacity: 0;
   transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
 }
 #vignette-item2:hover {
   background-size:cover;
@@ -111,6 +113,7 @@ button:hover {
   background-size:cover;
   opacity: 0;
   transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
 }
 #vignette-item3:hover {
   background-size:cover;
@@ -121,6 +124,7 @@ button:hover {
   background-size:cover;
   opacity: 0;
   transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
 }
 #vignette-item4:hover {
   background-size:cover;
@@ -131,6 +135,7 @@ button:hover {
   background-size:cover;
   opacity: 0;
   transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
 }
 #vignette-item5:hover {
   background-size:cover;
@@ -141,6 +146,7 @@ button:hover {
   background-size:cover;
   opacity: 0;
   transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
 }
 #vignette-item6:hover {
   background-size:cover;
