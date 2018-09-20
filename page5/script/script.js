@@ -87,7 +87,7 @@ $(document).ready(function() {
     // Mouvement circulaire
     let max=2;
     for(let j=0;j<max;j++){
-        for(let i=0;i<100;i++){
+        for(let i=0;i<=100;i++){
             moveitcircular('vignette1',2*Math.PI*i/100-Math.PI/2);
             moveitcircular('vignette2',2*Math.PI*i/100-Math.PI/6);
             moveitcircular('vignette3',2*Math.PI*i/100+Math.PI/6);
