@@ -182,10 +182,10 @@ object{
   width: 90%;
   height: 80%;
 }
-#linkedInLogo{
+.linkedInLogo{
   width: 20%;
 }
-#gitHubLogo{
+.gitHubLogo{
   width: 16%;
 }
 .modal-body{

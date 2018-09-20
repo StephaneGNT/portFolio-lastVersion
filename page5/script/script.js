@@ -2,28 +2,30 @@
 
 $(document).ready(function() {
 
-    // Affichage du background sur 100% de la hauteur
-    //$(".mainRow").css('height',0.925*$(window).height()+"px");
-
     // Détermination de la position du center
     let width=$(document).width();
     let height=$(document).height();
     let xcenter = width/2;
     let ycenter = height/2*0.8;
+    
     // Détermination du rayon du cercle
     let r=height/2*0.6;
+    
     // Détermination de la largeur d'une vignette
     let vignetteWidth=document.getElementById('vignette1').clientWidth;
     
     // Positionnement initial des vignettes
     positionVignettes();
+    
     // Positionnement du titre
     let title=document.getElementById('mainTitle');
     let titleWidth=document.getElementById('mainTitle').clientWidth;
     title.style.top=100*(ycenter)/height+"%";
     title.style.left=100*(xcenter-titleWidth/2)/width+"%";
+    
     // Apparition du titre
     $(title).animate({opacity: '1'}, 2500, 'linear', function(){});
+    
     // Positionnement intitial des nuages
     $("#cloud1").css('left',0.1*width);
     $("#cloud2").css('left',0.5*width);
@@ -74,6 +76,7 @@ $(document).ready(function() {
         xCloud2=parseFloat(getComputedStyle(cloud2).left);
     }, 20);
     
+
     // FadeIn des vignettes ///////////////////////////////////////////////////////////////////////////////////////////////////////
     let delay=4000;
     $('#vignette-item1').animate({opacity: '1'}, delay, 'linear', function(){});
@@ -84,7 +87,9 @@ $(document).ready(function() {
     $('#vignette-item6').animate({opacity: '1'}, delay, 'linear', function(){});
     $('.name').animate({opacity: '0.85'}, delay, 'linear', function(){});
 
-    // Mouvement circulaire
+
+
+    // Mouvement circulaire //////////////////////////////////////////////////////////////////////////////////////////////////////
     let max=2;
     for(let j=0;j<max;j++){
         for(let i=0;i<=100;i++){
@@ -124,6 +129,13 @@ $(document).ready(function() {
         vignette6.style.left=drawing(7*Math.PI/6)[1];
     }
 
+    function drawing(teta){
+        let top=Math.floor(ycenter-r*Math.sin(teta))*100/height+"%";
+        let left=Math.floor(xcenter-vignetteWidth/2+r*Math.cos(teta))*100/width+"%";
+        return [top, left];
+    }
+
+    // Déclenchement du son onclick /////////////////////////////////////////////////////////////////////////////////////////////
     var audioElement = $("#tir")[0];
     for(let i=1;i<=6;i++){
         let vignetteId='#vignette-item'+i;
@@ -131,14 +143,8 @@ $(document).ready(function() {
             audioElement.play();
         });
     }
-    
-    function drawing(teta){
-        let top=Math.floor(ycenter-r*Math.sin(teta))*100/height+"%";
-        let left=Math.floor(xcenter-vignetteWidth/2+r*Math.cos(teta))*100/width+"%";
-        return [top, left];
-    }
 
-    // Sepia filter on hover
+    // Sepia filter on hover ///////////////////////////////////////////////////////////////////////////////////////////////////
     function changeOnHover (i) {
         let selectedVignette = $("#vignette-item" + i);
         let vignetteArray = [1, 2 , 3, 4, 5 , 6];
@@ -222,7 +228,7 @@ $(document).ready(function() {
         j++;
     }
     
-    // Déplacement circulaire
+    // Déplacement circulaire //////////////////////////////////////////////////////////////////////////////////////////////////
     function moveitcircular(id,t) {
         let newLeft = (xcenter - vignetteWidth/2 + (r * 1.05 * Math.cos(t)));
         let newTop = (ycenter + (r*1.05 * Math.sin(t)));
