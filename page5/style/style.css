@@ -248,4 +248,9 @@ img{
 #cloud1, #cloud2{
   position:relative;
 }
-
+#vignette2{
+  z-index: 100;
+}
+#vignette5{
+  z-index: 100;
+}
